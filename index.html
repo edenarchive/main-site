@@ -35,15 +35,20 @@
         align-items: end;
         color: rgb(238, 234, 231);
       }
-
-      .song {
-        display: none;
+      
+      .image {
+        cursor: pointer;
       }
     </style>
   </head>
+  <body class="body">
+    <img src="Franz_Marc,_Der_tote_Spatz,_1905.jpg" class="image"
+      onclick="audio.play();">
 
-  <body class="body" >
-    <img src="Franz_Marc,_Der_tote_Spatz,_1905.jpg" class="image">
+    <script type="text/javascript">
+      const audio = new Audio();
+      audio.src = "./placeholder.mp3";
+    </script>
 
     <div class="text">
       <div>
@@ -54,10 +59,5 @@
         <div>font : playfair display</div>
       </div>
     </div>
-
-    <audio controls autoplay class="song">
-      <source src="placeholder.mp3" type="audio/mpeg">
-      <source src="placeholder.ogg" type="audio/ogg">
-    </audio> 
   </body>
 </html>
