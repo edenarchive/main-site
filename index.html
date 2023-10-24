@@ -1,7 +1,62 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Eden Archive</title>
+    <title>A.K.A "taurus"</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@0;1&display=swap" rel="stylesheet">
+
+    <style>
+       .body {
+        background-color: rgb(8, 8, 8);
+        max-width: 500px;
+        margin: auto;
+        margin-top: 250px;
+      }
+
+      .text {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        column-gap: 20px;
+        color: sienna;
+      }
+
+      .title {
+        font-size: 26px;
+        font-family: 'Playfair Display SC', serif;
+        margin: 0;
+      }
+
+      .author {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        color: rgb(238, 234, 231);
+      }
+
+      .song {
+        display: none;
+      }
+    </style>
   </head>
-  <body style="background-color: black"></body>
+
+  <body class="body" >
+    <img src="Franz_Marc,_Der_tote_Spatz,_1905.jpg" class="image">
+
+    <div class="text">
+      <div>
+        <p class="title">" Eden Archive "</p>
+      </div>
+      <div class="author">
+        <div>der tore spatz (franz marc, 1905)</div>
+        <div>font : playfair display</div>
+      </div>
+    </div>
+
+    <audio controls autoplay class="song">
+      <source src="placeholder.mp3" type="audio/mpeg">
+    </audio> 
+  </body>
 </html>
